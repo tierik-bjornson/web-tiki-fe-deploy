@@ -26,3 +26,9 @@ ingress:
           pathType: ImplementationSpecific
   tls: []
 
+autoscaling:
+  enabled: false  # Đổi thành true nếu muốn bật HPA
+  minReplicas: 1
+  maxReplicas: 10
+  targetCPUUtilizationPercentage: 80
+
