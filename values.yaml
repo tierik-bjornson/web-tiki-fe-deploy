@@ -14,3 +14,15 @@ serviceAccount:
   name: "web-tiki-fe-sa"
   automount: true
   annotations: {}
+
+ingress:
+  enabled: false  #
+  className: "nginx"
+  annotations: {}
+  hosts:
+    - host: example.local
+      paths:
+        - path: /
+          pathType: ImplementationSpecific
+  tls: []
+
