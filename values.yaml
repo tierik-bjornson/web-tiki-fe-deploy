@@ -8,3 +8,9 @@ image:
 service:
   type: ClusterIP
   port: 80
+
+serviceAccount:
+  create: false  
+  name: "web-tiki-fe-sa"
+  automount: true
+  annotations: {}
